@@ -17,6 +17,10 @@ function countUp(target, startVal, endVal, decimals, duration) {
     // make sure requestAnimationFrame and cancelAnimationFrame are defined
     // polyfill for browsers without native support
     // by Opera engineer Erik Möller
+		
+		// See the documentation http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
+		
+		
     var lastTime = 0;
     var vendors = ['webkit', 'moz', 'ms'];
     for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
